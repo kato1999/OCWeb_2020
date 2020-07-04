@@ -12,6 +12,12 @@
 	max-width: 10%;
 }
 
+.nav-item .nav-link{
+	font-size: 20px;
+	font-weight: bold;
+	color: whitesmoke;
+}
+
 .top-pic {
 	width: 100%;
 }
@@ -19,6 +25,8 @@
 	border-left: 6px solid rgb(168, 36, 36);
 	padding: 0 0 0 10px;
 }
+
+
 
 .footer-copyright {
 	width: 100%;
@@ -36,8 +44,8 @@
 @media screen and (min-width: 767.98px) {
 	.nav-item{
 		margin: 0 auto;
-		border-left: solid 1px white;
-		border-right: solid 1px white;
+		border-left: solid 1px whitesmoke;
+		border-right: solid 1px whitesmoke;
 	}
 	
 	.nav-item + .nav-item {
