@@ -7,31 +7,44 @@
 
 
 <!-- スタイルシートはここから -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-spy="scroll" data-taget="#navbar">
     <!-- ロゴ -->
     <div class="container">
-            <div class="header-logo col-6 col-md-3 p-0"><a href="/"><img src="img/logo.jpg" alt="ロゴ" class="w-100"></a> </div>
+            <div class="header-logo col-6 col-md-3 p-0"><img src="img/logo.jpg" alt="ロゴ" class="w-100"></div>
             </div>
         </div>
+        隣にopen campusの文字が入ったロゴにしたい 
     </div>
 
     <!-- メニュー -->
-    <div class="navbar-box bg-success">
-    <div class="bg-success container">
+    <div class="navbar-box bg-success sticky-top">
+    <div class="bg-success container ">
         <nav class="navbar navbar-expand-md navbar-dark bg-success">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav text-md-center nav-justified w-100">
-                    <li class="nav-item"><a class="nav-link" href="#sec2">ツアー</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sec3">対談</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sec4">情報</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sec4">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">トップ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./content/tour.html">ツアー</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./content/talk.html">対談</a></li>
+                    <li class="nav-item">
+                        <details>
+                            <summary class="nav-link">資料室</summary>
+                            <div class="detail_content">
+                                <p><a href="content/info.html">OC冊子</a></p>
+                                <p><a href="content/info.html">クイズ</a></p>
+                                <p><a href="content/info.html">展示</a></p>
+                            </div>
+                        </details>
+                    </li>
+                    
+
                 </ul>
             </div>
         </nav>
@@ -39,8 +52,19 @@
     </div>
 
     <!-- トップ画像 -->
-    <img src="img/DSCN0137.JPG" class="top-pic">
+    <div class="jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+        <div class="container d-flex  d-flex align-items-center">
+            <div class="col-md-8 mx-auto card p-5" id="top-doc">
+                <h1 class="display-4 mx-auto text-center title">Open Campus<br>学生企画</h1>
+                <h3 class="mx-auto text-center mt-3 date">~オンライン~ </h3>
+                <h3 class="mx-auto text-center mt-3 date">Date：8/8,9,10 </h3>
+                <!-- <h3 class="mx-auto text-center mt-3 cont">Content：ツアー・対談・資料(必要?)</h3> -->
+            </div>
+        </div>
+    </div>
+
     
+
 
     <!-- 学生企画説明 -->
     <section class="container py-5" id="sec1">
@@ -65,21 +89,37 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"><img src="img/talk.jpg" alt="スタッフ画像1" class="w-100"> </div>
-                    <div class="card-body pt-0">
-                        <h3 class="mb-0">ツアー</h3>
-                        <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ </p>
-                    </div>
+                    <a href="index.html">
+                        <div class="p-3"><img src="img/talk.jpg" alt="スタッフ画像1" class="w-100"> </div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-0">ツアー</h3>
+                            <p class="card-text">動画の一部に置き換える?去年の写真のままでよい?</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="img/quiz4.JPG" alt="スタッフ画像2" class="w-100"> </div>
-                    <div class="card-body pt-0">
-                        <h3 class="mb-0">対談</h3>
-                        <p class="card-text">あああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                    </div>
+                    <a href="index.html">
+                        <div class="p-3"> <img src="img/quiz4.JPG" alt="スタッフ画像2" class="w-100"> </div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-0">対談</h3>
+                            <p class="card-text">企画の説明。トップページからも概要が分かるように。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="index.html">
+                        <div class="p-3"> <img src="img/tour0.jpg" alt="スタッフ画像3" class="w-100"> </div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-0">資料室</h3>
+                            <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -88,24 +128,14 @@
                     <div class="p-3"> <img src="img/tour0.jpg" alt="スタッフ画像3" class="w-100"> </div>
                     <div class="card-body pt-0">
                         <h3 class="mb-0">情報</h3>
-                        <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <p class="card-text">写真のサイズが異なる場合の実験等、いろいろ試す用</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="img/tour0.jpg" alt="スタッフ画像3" class="w-100"> </div>
-                    <div class="card-body pt-0">
-                        <h3 class="mb-0">情報</h3>
-                        <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="img/tour0.jpg" alt="スタッフ画像3" class="w-100"> </div>
+                    <div class="p-3"> <img src="img/DSCN0137.JPG" alt="スタッフ画像3" class="w-100"> </div>
                     <div class="card-body pt-0">
                         <h3 class="mb-0">情報</h3>
                         <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
@@ -123,21 +153,21 @@
                 </div>
             </div>
         </div>
+
+        
 </div><!--/.container-->
 </section>
 
 
 
 
-    <hr class="my-0">
-<!-- *************************************************************** -->
-
-    <!-- *************************************************************** -->
-    <div class="footer footer-copyright text-center bg-success text-light"> <span class="small">Copyright (C) 2020 Nagoya University Co-op Student Committee.</span>
-        <div class="float-right bg-secondary col-sm-1"> <a href="#"> <i class="fas fa-arrow-up text-light"></i> </a> </div>
-    </div>    
+    <!-- フッター(コピーライト) -->
+    <footer>
+        <div class="footer footer-copyright text-center bg-success text-light">
+            <span class="small">Copyright (C) 2020 Nagoya University Co-op Student Committee.</span>
+        </div>    
     </footer>
-    <!-- *************************************************************** -->    
+
     <!-- javascript はここから --> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>    

@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
 .no-gutter > [class*='col-'] {
 	padding-right: 0;
 	padding-left: 0;
@@ -7,23 +10,100 @@
 	background-color: #16ce65;
 }
 
+
 .header-logo{
-	width: 150px;
-	max-width: 10%;
+	width: 100px;
+	max-width: 20%;
 }
 
-.nav-item .nav-link{
+.navbar-nav .nav-item .nav-link{
 	font-size: 20px;
-	font-weight: bold;
 	color: whitesmoke;
+	font-weight: bold;
 }
 
-.top-pic {
-	width: 100%;
+/* メニュー部分のデザイン */
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+	background-color: #2fc552;
+	color: white;
 }
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">"
+}
+
+details{
+	text-align: center;
+	height: 50px;
+}
+
+.detail_content{
+	padding-top: 10px;
+}
+
+.detail_content > p {
+	width: 100%;
+	border: 1px solid #2fc552;
+	margin: 0 auto;
+	font-size: 1.4em;
+	color: rgb(6, 173, 0);
+	background-color: rgb(230, 255, 213);
+	padding: 15px 6px;
+	margin: 0;
+	box-shadow: 3px 3px 4px black;
+}
+
+.detail_content > p > a{
+	color: rgb(6, 173, 0);
+	font-weight: bolder;
+}
+
+
+/* 豊講部分のデザイン */
+.jumbotron {
+	background-image: url('../img/DSCN0137.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;
+}
+
+#top-doc{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.title{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: rgb(64, 128, 0);
+}
+.date{
+	color: rgb(163, 13, 43);
+	font-family: 'Anton', sans-serif;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 30px;
+}
+
+
 .heading {
-	border-left: 6px solid rgb(168, 36, 36);
+	border-left: 6px solid rgb(6, 173, 0);
 	padding: 0 0 0 10px;
+}
+
+
+
+/* リンク部分のデザイン */
+.card a{
+	color: rgb(10, 10, 10);
+	text-decoration: none;
+}
+
+
+
+.card a{
+	transition:all .5s ease;
+  }
+
+.card:hover a{
+	background-color:rgb(218, 255, 213);
 }
 
 
@@ -42,6 +122,13 @@
 /* 大デバイス（デスクトップ, 992px 未満）
 ============================================== */
 @media screen and (min-width: 767.98px) {
+	.title{
+		font-size: 70px;
+	}
+	.date{
+		font-size: 40px;
+	}
+
 	.nav-item{
 		margin: 0 auto;
 		border-left: solid 1px whitesmoke;
