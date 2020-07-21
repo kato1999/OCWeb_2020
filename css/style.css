@@ -33,11 +33,6 @@
 	content: ">"
 }
 
-details{
-	text-align: center;
-	height: 50px;
-}
-
 .detail_content{
 	padding-top: 10px;
 }
@@ -58,6 +53,11 @@ details{
 	color: rgb(6, 173, 0);
 	font-weight: bolder;
 }
+
+.no_link{
+	pointer-events:none;
+}
+
 
 
 /* 豊講部分のデザイン */
@@ -103,9 +103,9 @@ details{
 	transition:all .5s ease;
   }
 
-.card:hover a{
+/* .card:hover a{
 	background-color:rgb(218, 255, 213);
-}
+} */
 
 
 
@@ -120,9 +120,14 @@ details{
 	height: 50px;
 }
 
-/* 大デバイス（デスクトップ, 992px 未満）
+/* 大デバイス（デスクトップ, 768px 以上）
 ============================================== */
 @media screen and (min-width: 767.98px) {
+	details{
+		text-align: center;
+		height: 50px;
+	}
+
 	.title{
 		font-size: 70px;
 	}
@@ -163,6 +168,11 @@ details{
 /* 小デバイス（縦向きモバイル, 576px 以上 デスクトップ, 992px 未満）
 ============================================== */
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
+	details{
+		text-align: center;
+		height: 50px;
+	}
+
 	#sec2  {
 		height: 500px;
 	} 
