@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<title>OC2020　学生企画</title>
-<meta name="description" content="サイトの説明文">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <title>OC2020　学生企画</title>
+    <meta name="description" content="サイトの説明文">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-<!-- スタイルシートはここから -->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+    <!-- スタイルシートはここから -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112746834-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-112746834-7');
+    </script>
 </head>
 
 <body data-spy="scroll" data-taget="#navbar">
-    <!-- ロゴ -->
-    <div class="container">
-            <div class="header-logo col-6 col-md-3 p-0"><img src="img/logo.jpg" alt="ロゴ" class="w-100"></div>
-            </div>
-        </div>
-        隣にopen campusの文字が入ったロゴにしたい 
-    </div>
-
     <!-- メニュー -->
     <div class="navbar-box bg-success sticky-top">
     <div class="bg-success container ">
@@ -28,6 +30,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="header-logo"><img src="img/logo.png" alt="ロゴ" class="w-75"></div>
+
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav text-md-center nav-justified w-100">
                     <li class="nav-item"><a class="nav-link" href="./index.html">トップ</a></li>
