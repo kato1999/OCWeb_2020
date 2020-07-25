@@ -71,7 +71,6 @@
 }
 
 
-
 #top-doc{
 	background-color: rgba(247, 255, 246, 0.85);
 }
@@ -93,6 +92,7 @@
 }
 
 
+/* コンテンツ名称の緑色部分 */
 .heading {
 	border-left: 6px solid rgb(6, 173, 0);
 	padding: 0 0 0 10px;
@@ -114,11 +114,21 @@
 	font-size: 10px;
 }
 
+.situation{
+	color: red;
+	font-size: 1.1em;
+}
+
 /* .card:hover a{
 	background-color:rgb(218, 255, 213);
 } */
 
-
+.form{
+	width:640px;
+	height:450px;
+	max-width: 100%;
+	border: 0px;
+}
 
 .footer-copyright {
 	width: 100%;
@@ -183,17 +193,10 @@
 		text-align: center;
 		height: 50px;
 	}
-
-	#sec2  {
-		height: 500px;
-	} 
 } /* END */
 
 /* 小デバイス（縦向きモバイル, 576px 以上）
 ============================================== */
 @media screen and (min-width: 576px) {
-	#sec2 .message {
-		position: absolute;
-		left: 0;
-	} 
+	
 } /* END */
