@@ -2,3 +2,17 @@
     background-image: url('../img/Top.png');
 	min-height: 50px;
 }
+
+/* 冊子の表 */
+table.contents {
+    width: 95%;
+    font-size: large;
+    border: solid 1.5px rgb(167, 163, 163);
+    margin-top: 50px;
+}
+
+table.contents td {
+    border: solid 1px rgb(167, 163, 163);
+    padding: 10px 10px 10px 15px;
+    height: 70%;
+}
