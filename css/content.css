@@ -78,14 +78,62 @@ table.contents td {
 #choice4:hover {background-color: green;   color: white;}
 
 
-/* クイズ解答 */
-.ans_box{min-height: 65vh;}
 
-#answer{
-    margin-top: 100px;
+/* クイズ解答 */
+.explain{
+    min-height: 90vh;
 }
 
-#explain{
-    margin-bottom: 100px;
+.correct_fig{
+    font-size: 200px;
+    font-weight: bold;
+    color: red;
+    line-height: 220px;
+    margin-bottom: -30px;
+}
+
+.correct_word ,.uncorrect_word{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    line-height: 100px;
+    margin-bottom: 20px;
+    /* margin-bottom: -20px; */
+}
+
+
+.uncorrect_fig{
+    font-size: 250px;
+    color: blue;
+    line-height: 220px;
+    margin-bottom: -30px;
+}
+
+.uncorrect_word{
+    color: blue;
+}
+
+.link{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.back_quiz {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: 2px solid rgb(83, 83, 83);
+    transition: .4s;
+}
+
+.back_quiz:hover{
+    background-color: rgb(83, 83, 83);
+    text-decoration: none;
+    color: white;
 }
 

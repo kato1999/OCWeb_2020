@@ -1,17 +1,11 @@
-// 問題文とカテゴリのリスト
-var problem = ["問題文1","問題文2","問題文3"];
-var categ = ["〇〇1編", "〇〇2編", "〇〇3編"]
+// 解説文のリスト(開業する場合は\nを使用)
+var expl=[
+    "第1問の解説　あああああああああああああああああああああああああああああああああああああああああああああああああ",
+    "第2問の解説　いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい",
+    "第3問の解説　ううううううううううううううううううううううううううううううううううううううううううううううううう",
+    ]
 
 
-// 選択肢のリスト
-var choice = [
-    ["問題1の解答選択肢1", "問題1の解答選択肢2", "問題1の解答選択肢3", "問題1の解答選択肢4"], 
-    ["問題2の解答選択肢1", "問題2の解答選択肢2", "問題2の解答選択肢3", "問題2の解答選択肢4"], 
-    ["問題3の解答選択肢1", "問題3の解答選択肢2", "問題3の解答選択肢3", "問題3の解答選択肢4"], 
-  ];
-
-// 正答のリスト
-var ans = [1,3,2]
 
 var arg = new Object;
 var parm = location.search.substring(1).split('&');
@@ -19,20 +13,19 @@ var val = parm[0].split('=');
 var num = Number(val[1])-1
 var TF = parm[1].split('=');
 
-console.log(TF);
-console.log(num);
-console.log(parm);
-
+crrct = "<div class='fig correct_fig'>&#x25CB;</div>\n <div class='correct_word'>正解!</div>"
+uncrr = "<div class='fig uncorrect_fig'>&#x00D7;</div>\n <div class='uncorrect_word'>残念!不正解</div>"
 
 
 window.onload = function() {
-    if (TF[0]==="T"){
-        document.getElementById('answer').innerHTML = 正解;
+    if (TF[1]==="T"){
+        document.getElementById('answer').innerHTML = crrct;
     }
     else{
-        document.getElementById('answer').innerHTML = 不正解;
+        document.getElementById('answer').innerHTML = uncrr;
     }
 
+    document.getElementById('explain').innerHTML = expl[num];
  }
 
 
