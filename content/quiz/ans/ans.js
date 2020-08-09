@@ -17,24 +17,22 @@ var arg = new Object;
 var parm = location.search.substring(1).split('&');
 var val = parm[0].split('=');
 var num = Number(val[1])-1
+var TF = parm[1].split('=');
+
+console.log(TF);
+console.log(num);
+console.log(parm);
 
 
-
-
-
-// alert(val[0]);
 
 window.onload = function() {
-    document.getElementById('problem').innerHTML = problem[num];
-    document.getElementById('category').innerHTML = categ[num];
+    if (TF[0]==="T"){
+        document.getElementById('answer').innerHTML = 正解;
+    }
+    else{
+        document.getElementById('answer').innerHTML = 不正解;
+    }
 
-    document.getElementById('choice').innerHTML = categ[num];
-
-
-    document.getElementById('choice1').innerHTML = choice[num][0];
-    document.getElementById('choice2').innerHTML = choice[num][1];
-    document.getElementById('choice3').innerHTML = choice[num][2];
-    document.getElementById('choice4').innerHTML = choice[num][3];
  }
 
 
