@@ -137,3 +137,10 @@ table.contents td {
     color: white;
 }
 
+/* 情報の宝庫画像 */
+img.photo {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
