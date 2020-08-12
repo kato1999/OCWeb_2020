@@ -8,9 +8,9 @@
 
 <!-- スタイルシートはここから -->
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-<link rel="stylesheet" href="../../../css/bootstrap.min.css">
-<link rel="stylesheet" href="../../../css/style.css">
-<link rel="stylesheet" href="../../../css/content.css">
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/content.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112746834-7"></script>
 <script>
@@ -23,14 +23,6 @@
 </head>
 
 <body data-spy="scroll" data-taget="#navbar">
-    <!-- ロゴ -->
-    <div class="container">
-            <div class="header-logo col-6 col-md-3 p-0"><img src="../img/logo.jpg" alt="ロゴ" class="w-100"></div>
-            </div>
-        </div>
-        隣にopen campusの文字が入ったロゴにしたい 
-    </div>
-
     <!-- メニュー -->
     <div class="navbar-box bg-success sticky-top">
     <div class="bg-success container ">
@@ -38,11 +30,22 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="header-logo"><a href="../../index.html"><img src="../../img/logo.png" alt="ロゴ" class="w-75"></a></div>
+
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav text-md-center nav-justified w-100">
                     <li class="nav-item"><a class="nav-link" href="../../index.html">トップ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../content/tour.html">ツアー</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../content/talk.html">対談</a></li>
+                    <li class="nav-item"><a class="nav-link no_link" href="./content/tour.html">ツアー (準備中)</a></li>
+                    <li class="nav-item">
+                        <details>
+                            <summary class="nav-link">対談</summary>
+                            <div class="detail_content">
+                                <!-- <p><a href="./content/info.html">対談　トップ</a></p> -->
+                                <!-- <p><a href="./content/info.html">対談動画(準備中)</a></p> -->
+                                <p><a href="../../content/question.html">質問募集</a></p>
+                            </div>
+                        </details>
+                    </li>
                     <li class="nav-item">
                         <details>
                             <summary class="nav-link">資料室</summary>
@@ -78,83 +81,147 @@
     <!-- 説明文 -->
     <section class="container py-5" id="sec1">
         <div class="mb-3">
-            <h2 class="heading d-inline-block mr-2">クイズの説明文</h2>
+            <h2 class="heading d-inline-block mr-2">レッツ名大クイズ！</h2>
         </div>
-        <p class="text-secondary">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+        <p class="text-secondary">
+            名古屋大学に関するカテゴリー別カテゴリー別のクイズを用意しました。クイズにチャレンジして楽しみながらたくさんの情報を手に入れてください！！
+        </p>
     </section>
 
-    <hr class="my-0">
-
-    <!-- コンテンツ例2 -->
-    <section class="container-fluid bg-light py-5" id="sec2">
-        <div class="container">
-            <div class="row position-relative d-md-flex flex-row-reverse">
-                <div class="col-12 col-md-6 pb-3"><img src="../img/guide0.jpg" alt="画像例" class="w-100 shadow-sm border"> </div>
-                <div class="col-12 col-md-6 message">
-                    <h2 class="heading d-inline-block mr-2">コンテンツ例</h2>
-                    <div class="bg-white p-5" style="opacity: 0.5">
-                    <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                    <p class="m-0"><em>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</em></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  
-
-    <!-- コンテンツ例3 -->
+    <!-- クイズ -->
     <section class="py-5 " id="sec7">
         <div class="container">
             <div class="mb-3">
-        <h2 class="heading d-inline-block mr-2">コンテンツ例</h2>
-    </div>
+         </div>
+
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="../img/tour0.jpg" alt="資料室画像" class="w-100"> </div>
+                    <a href="problem/problem.html?num=1">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="名大の歴史編" class="w-100"> </div>
                     <div class="card-body pt-0">
-                        <h3 class="mb-0">情報</h3>
-                        <p class="card-text">写真のサイズが異なる場合の実験等、いろいろ試す用</p>
+                        <h4 class="mb-0">名大の歴史編</h4>
                     </div>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="../img/DSCN0137.JPG" alt="スタッフ画像3" class="w-100"> </div>
+                    <a href="problem/problem.html?num=2">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="駅・立地編" class="w-100"> </div>
                     <div class="card-body pt-0">
-                        <h3 class="mb-0">情報</h3>
-                        <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <h4 class="mb-0">駅・立地編</h4>
                     </div>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="mb-3 card shadow-sm">
-                    <div class="p-3"> <img src="../img/tour0.jpg" alt="スタッフ画像3" class="w-100"> </div>
+                    <a href="problem/problem.html?num=3">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="敷地面積編" class="w-100"> </div>
                     <div class="card-body pt-0">
-                        <h3 class="mb-0">情報</h3>
-                        <p class="card-text">ああああああああああああああああああああああああああああああああああああああああああ</p>
+                        <h4 class="mb-0">敷地面積編</h4>
                     </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=4">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="購買・コンビニ編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">購買・コンビニ編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=5">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="食堂・外食編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">食堂・外食編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=6">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="カフェ編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">カフェ編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=7">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="博物館編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">博物館編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=8">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="フリースペース編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">フリースペース編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=9">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="Meica編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">Meica編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=10">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="NUCT編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">NUCT編</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3 card shadow-sm">
+                    <a href="problem/problem.html?num=11">
+                    <div class="p-3"> <img src="../../img/Tour.jpg" alt="Me~dia編" class="w-100"> </div>
+                    <div class="card-body pt-0">
+                        <h4 class="mb-0">Me~dia編</h4>
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div><!--/.container-->
     </section>
 
-    <!-- コンテンツ例4 -->
-    <section class="bg-light py-5" id="sec4">
-        <div class="container py-5">
-    <div class="mb-3">
-            <h2 class="heading d-inline-block mr-2">コンテンツ例</h2>
-        </div>
-            <figure> <img src="../img/DSCN0137.JPG" alt="画像例" class="w-100 border"> </figure>
-            <h3 class="text-secondary font-weight-bold my-4">あああああああああああああああああああああああああああああああああああああ</h3>
-            <p class="text-secondary pb-md-5 mb-5">いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
-        </div>
-    </section>
-
+    <div>
+        <p><center><a href="../info.html">資料室TOPに戻る</a></center></p>
+    </div>
 
 
 
