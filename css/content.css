@@ -18,6 +18,12 @@ table.contents td {
 }
 
 
+/* クイズトップページ */
+.link-fix{
+    margin-top:-100px;
+    padding-top:100px;
+}
+
 
 /* クイズの問題 */
 #choice, #box1{
