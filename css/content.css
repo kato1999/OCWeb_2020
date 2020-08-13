@@ -151,5 +151,6 @@ img.photo {
 }
 
 img.pic {
+    max-width: 50%;
     margin: 10px 50px 50px 10px;
 }
