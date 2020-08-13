@@ -61,9 +61,9 @@ select = select.replace("problem", num+1);
 cnt = 1;
 while(cnt<=4){
     if (cnt==ans[num]){
-        select=select.replace("TF","T"); }
+        select=select.replace("TF","%9B%E3%81%8B%E3%81%84"); }
     else{
-        select=select.replace("TF","F"); }
+        select=select.replace("TF","%96%E3%81%AD%E3%82%93"); }
     cnt = cnt + 1;
 }
 

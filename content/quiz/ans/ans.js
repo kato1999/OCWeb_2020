@@ -59,11 +59,14 @@ link2 = link2.replace("ID", "card"+String(num+1));
 
 
 window.onload = function() {
-    if (TF[1]==="T"){
+    if (TF[1]==="%9B%E3%81%8B%E3%81%84"){
         document.getElementById('answer').innerHTML = crrct;
     }
-    else{
+    else if(TF[1]==="%96%E3%81%AD%E3%82%93"){
         document.getElementById('answer').innerHTML = uncrr;
+    }
+    else{
+        document.getElementById('sec1').innerHTML = "";
     }
 
     document.getElementById('explain').innerHTML = expl[num];
