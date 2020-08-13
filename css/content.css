@@ -140,10 +140,14 @@ table.contents td {
 
 /* 情報の宝庫画像 */
 img.photo {
-    max-width: 500px;
+    max-width: 400px;
     width: 80%;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.photo_pos{
+    text-align: left;
 }
 
 img.pic {
