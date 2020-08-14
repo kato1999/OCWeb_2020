@@ -47,8 +47,29 @@
 	background: #ffb74d;
 }
 
+#sec1 ul, #sec1 ol {
+    padding: 0;
+    margin-left: 30px;
+}
+  
+#sec1 ul li, #sec1 ol li {
+    color: black;
+    border-left: solid 8px #8dcf67;/*左側の線*/
+    background: whitesmoke;/*背景色*/
+    margin-bottom: 5px;/*下のバーとの余白*/
+    line-height: 1.5;
+    border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+    padding: 0.5em;
+    list-style-type: none!important;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
 
-
+#sec1 ul li a{
+    text-decoration: none;
+    /* color:black; */
+    font-size: 18px;
+}
 
 
 /* 冊子の表 */
