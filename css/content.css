@@ -4,6 +4,53 @@
 }
 
 
+/* 対談回答ページ */
+.new{
+    font-size: 1.3em;
+    color: red;
+}
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.cp_qa .question {
+	margin-bottom: 0.5em;
+	padding: 0.2em 0.5em 0.5em 2em;
+	border-radius: 0.2em;
+	background: #8dcf67;
+}
+
+.cp_qa .answer {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding: 0.5em 1em 1.5em 3em;
+}
+
+.cp_qa .question::before,.cp_qa .answer::before{
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+.cp_qa .question::before {
+	margin: 0.3em 0.3em 0 -1em;
+	content: 'Q';
+}
+
+.cp_qa .answer::before {
+	margin: 0 0.5em 0 -2em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	border-radius: 0.2em;
+	background: #ffb74d;
+}
+
+
+
+
+
 /* 冊子の表 */
 table.contents {
     width: 95%;
@@ -159,3 +206,6 @@ img.pic {
 .info{
     min-height: 80vh;
 }
+
+
+

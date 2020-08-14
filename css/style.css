@@ -58,6 +58,10 @@
 	pointer-events:none;
 }
 
+.detail_content p a{
+	display: block;
+}
+
 
 
 /* 豊講部分のデザイン */
