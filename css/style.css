@@ -119,6 +119,11 @@
 	font-size: 1.1em;
 }
 
+.situation2{
+	color: rgb(173, 113, 0);
+	font-size: 1.1em;
+}
+
 /* .card:hover a{
 	background-color:rgb(218, 255, 213);
 } */
@@ -140,6 +145,19 @@
 .footer-logo {
 	height: 50px;
 }
+html {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+  }
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+  }
 
 
 

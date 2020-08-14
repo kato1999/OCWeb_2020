@@ -3,6 +3,7 @@
 	min-height: 50px;
 }
 
+
 /* 冊子の表 */
 table.contents {
     width: 95%;
@@ -153,4 +154,8 @@ img.photo {
 img.pic {
     max-width: 50%;
     margin: 10px 50px 50px 10px;
+}
+
+.info{
+    min-height: 80vh;
 }
