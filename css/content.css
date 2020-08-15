@@ -80,6 +80,11 @@
     font-size: 18px;
 }
 
+.sec ul li{
+    display: inline-block;
+    background: rgb(230, 230, 230);/*背景色*/
+}
+
 
 /* 冊子の表 */
 table.contents {
