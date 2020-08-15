@@ -6,7 +6,9 @@
 /* ツアーパノラマ */
 .map{
     display: block;
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin-bottom: 20px;
+    margin-top: 15px;
     width: 90%;
     max-width:400px;
 }
