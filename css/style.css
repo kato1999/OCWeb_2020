@@ -140,10 +140,12 @@
 }
 
 .footer-copyright {
+	text-align: center;
 	width: 100%;
 	height: 60px;
-	line-height: 60px;
-	background-color: #ff1d1d;
+	padding-top:10px;
+	background-color:rgb(6, 173, 0);
+	color: white;
 }
 
 .footer-logo {
