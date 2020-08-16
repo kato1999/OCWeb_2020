@@ -4,6 +4,13 @@
 }
 
 /* ツアーパノラマ */
+.map_all{
+    display:block;
+    margin: 10px 1uto;
+    width: 95%;
+    max-width: 800px;
+}
+
 .map{
     display: block;
     /* margin: 10px auto; */
